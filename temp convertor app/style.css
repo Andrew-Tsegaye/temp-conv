@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    background-image: url(../bianca-ackermann-gR8QukPoAvQ-unsplash.jpg);
+}
+
+
+  .main-heading {
+    color: rgb(47, 136, 158);
+    text-transform: uppercase;
+  }
+  
+  .main-heading-primary {
+    display: inline;
+    font-size: 5.0rem;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s ease-out;
+  }
+  
+  .main-heading-secondary {
+    font-family: sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 31px;
+    color: hotpink;
+    animation: moveInRight 1s ease-out;
+  }
+  
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    
+    80% {
+      transform: translateX(10px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    
+    80% {
+      transform: translateX(-10px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+input {
+    border-radius: 15px;
+    border: 2px solid #3c4043;
+    font-size: 18px;
+    line-height: 1.5;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+form {
+    color: white;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-heading-primary {
+    font-size: 1.8rem;
+    letter-spacing: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .main-heading-secondary {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 17px;
+  }
+
+}
